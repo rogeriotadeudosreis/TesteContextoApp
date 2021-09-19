@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
     color: '#FFF',
     fontSize: 24,
     fontWeight: 'bold',
-    marginBottom: 30,
+    marginTop: 30,
     
   },
   data: {

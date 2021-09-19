@@ -2,6 +2,7 @@ import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 
 import AuthProvider from './src/Contexts/auth';
+
 import Contato from './src/Pages/Contato';
 import Inicial from './src/Pages/Inicial';
 
@@ -15,18 +16,20 @@ export default function App() {
   return (
     <>
       <NavigationContainer>
-        <Stack.Navigator initialRouteName="Inicial">
-          <Stack.Screen
-            name="Inicial"
-            component={Inicial}
-            options={{headerShown: true}}
-          />
-          <Stack.Screen
-            name="Contato"
-            component={Contato}
-            options={{headerShown: true}}
-          />
-        </Stack.Navigator>
+        <AuthProvider>
+          <Stack.Navigator initialRouteName="Inicial">
+            <Stack.Screen
+              name="Inicial"
+              component={Inicial}
+              options={{headerShown: true}}
+            />
+            <Stack.Screen
+              name="Contato"
+              component={Contato}
+              options={{headerShown: true}}
+            />
+          </Stack.Navigator>
+        </AuthProvider>
       </NavigationContainer>
     </>
   );

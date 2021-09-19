@@ -16,9 +16,10 @@ export default function Inicial() {
 
   return (
     <View style={styles.container}>
+      <Text style={styles.texto}>Aula Sobre Context</Text>
       <Text style={styles.texto}>Tela Inicial de Cadastro</Text>
       <View>
-        <View style={styles.containerInputs}>
+        <View>
           <TextInput
             style={styles.input}
             placeholder={'Digite seu nome...'}

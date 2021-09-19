@@ -6,24 +6,28 @@ const styles = StyleSheet.create({
     backgroundColor: '#182522',
     alignItems: 'center',
     justifyContent: 'center',
+    
   },
   texto: {
     color: '#FFF',
     fontSize: 24,
     fontWeight: 'bold',
-    marginBottom: 25,
+    marginBottom: 30,
+    
   },
-  input: {
+  data: {
+    color:"#FFF",
     width: 300,
     borderColor: '#eee',
     borderWidth: 1,
     borderRadius: 4,
     height: 40,
     marginBottom: 10,
-    paddingLeft: 10,
-    backgroundColor: '#FFF',
+    padding: 5,
     fontSize: 18,
+    alignContent:'center'
   },
+ 
 });
 
 export default styles;
